@@ -29,9 +29,12 @@ class App extends React.Component {
              id: snapShot.id,
              ...snapShot.data()
            }
+         }, ()=> {
+          console.log(this.state);
          });
-         console.log(this.state);
+        
        });
+       
      }else {
       this.setState({ currentUser: userAuth});
      }
@@ -46,7 +49,7 @@ class App extends React.Component {
   render(){
     return ( 
       <div>
-        <Header/>
+        <Header currentUser={this.state.currentUser}/>
         <Switch>
           <Route exact path='/' component={HomePage}/>
           <Route  path='/shop' component={ShopPage}/>
