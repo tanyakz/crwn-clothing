@@ -1,5 +1,5 @@
 import CartActionTypes from './cart.types';
-import cartDropdownComponent from '../../components/cart-dropdown/cart-dropdown.component';
+//import cartDropdownComponent from '../../components/cart-dropdown/cart-dropdown.component';
 
 export const toggleCartHidden = () => ({
     type: CartActionTypes.TOGGLE_CART_HIDDEN
